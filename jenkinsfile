@@ -6,17 +6,17 @@ pipeline {
 					echo "Compiled Successfully!!";
 					}
 				}
-	stage ('JUnit') {
+		stage ('JUnit') {
 			steps {
 					echo "JUnit passed Successfully!!";
 					}
 				}
-	stage ('Quality-Gate') {
+		stage ('Quality-Gate') {
 			steps {
 					echo "SonarQube Quality Gate passed Successfully!!";
 					}
 				}					
-	stage ('Deploy') {
+		stage ('Deploy') {
 			steps {
 					echo "Deploy passed Successfully!!";
 					}
